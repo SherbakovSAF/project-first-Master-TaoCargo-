@@ -1,0 +1,48 @@
+body {
+    background-color: #282B38;
+    font-family: 'Proxima Nova', sans-serif;
+    color: #fff;
+    font-size: 26px;
+}
+
+.general__container {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1207px;
+    margin: 0 auto;
+}
+
+.title__text{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.24;
+    text-transform: uppercase;
+}
+
+.second__bg {
+    background-color: #6C7188;
+}
+
+.button {
+    background-color: #E58D35;
+    border-radius: 90px;
+}
+
+.none {
+    display: none;
+}
+
+@import "./reboat";
+@import "./blocks/navigation";
+@import "./blocks/header";
+@import "./blocks/calk";
+@import "./blocks/advantage";
+@import "./blocks/delivery";
+@import "./blocks/services";
+@import "./blocks/aboutCompany";
+@import "./blocks/faq";
+@import "./blocks/txt";
+@import "./blocks/footer";

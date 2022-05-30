@@ -1,0 +1,119 @@
+.header__wrapper {
+    background-color: antiquewhite;
+    height: 700px;
+    
+    background: linear-gradient(94.52deg, rgba(4, 5, 17, 0.72) 1.89%, rgba(88, 88, 88, 0) 65.32%), url(../img/header/headerBG1.jpg);;
+    filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+    border-radius: 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 22.14px;
+        height: 41.36px;
+        background: url(../img/header/arrowHeader.svg) center no-repeat;
+        
+
+        position: absolute;
+        top: 50%;
+        left: 91.21%;
+        transform: translate(-100%, -50%);
+
+        cursor: pointer;
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        width: 22.14px;
+        height: 41.36px;
+        background: url(../img/header/arrowHeader.svg) center no-repeat;
+
+        position: absolute;
+        top: 50%;
+        left: 8.79%;
+        transform: translateY(-50%) rotate(180deg);
+
+        cursor: pointer;
+    }
+}
+
+.header__frame__wrapper {
+    padding-top:  163px;
+}
+
+.header__title {
+    max-width: 463px;
+    font-size: 56px;
+    margin-bottom: 8px;
+}
+
+.header__subtitle {
+    max-width: 345px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.355;
+
+    margin-bottom: 37px;
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.46;
+
+    padding: 23px 21.42px 22px 33px;
+    transition: all .2s ease-in;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/arrowBtn.svg);
+        margin-left: 30px;
+    }
+    
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+.header__slider{
+    position: absolute;
+    left: 50%;
+    top: 93.86%;
+    transform: translate(-50%, -100%);
+
+    display: flex;
+}
+
+.header__slider__circle {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #FFFFFF;
+    border-radius: 90px;
+
+    margin-left: 26px; 
+
+    cursor: pointer;
+
+    &:first-child{
+        margin-left: 0px;
+    }
+}
+
+.slider__circle__active {
+    border: none;
+    background: rgba($color: #fff, $alpha: 0.9);
+}

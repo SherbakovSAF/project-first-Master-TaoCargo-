@@ -1,0 +1,36 @@
+.navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 0px;
+    align-items: center;
+}
+
+.navigation__links__wrapper {
+    display: flex;
+}
+.navigation__links__text {
+    font-size: 16px;
+    margin-left: 46px;
+    cursor: pointer;
+    transition: all .1s ease-in;
+
+    &:first-child {
+        margin-left: 0px;
+    }
+
+    &:hover {
+        transform: scale(1.08);
+    }
+}
+
+.navigation__btn__text {
+    font-size: 15px;
+    padding: 14px 27px;
+    transition: all .3s ease-in;
+
+    &:hover{
+        background-color: #fff;
+        transform: scale(1.03);
+        color: #E58D35;
+    }
+}
